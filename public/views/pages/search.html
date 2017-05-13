@@ -5,14 +5,14 @@
 <div ng-controller="MovieController as mc">
   <p>
     <input type="text" placeholder="Search Movies..." value="" ng-model="mc.searchWordIn">
-    <button type="button" ng-click="mc.getSearchResults()">Search</button>
+    <button class="btn" ng-click="mc.getSearchResults()">Search</button>
   </p>
 
   <div ng-repeat="movie in mc.searchResultMovies">
     <div class="col-sm-4  col-xs-4">
       <h4>{{movie.Title}}</h4>
       <img ng-src="{{movie.Poster}}" alt="">
-      <button ng-click="mc.addFavoriteMovie(movie.Title, movie.Poster, movie.Year)">Add To Favorites</button>
+      <button class="btn" ng-click="mc.addFavoriteMovie(movie.Title, movie.Poster, movie.Year)">Add To Favorites</button>
     </div>
 
   </div>

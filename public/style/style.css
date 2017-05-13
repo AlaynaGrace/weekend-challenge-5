@@ -8,7 +8,15 @@ div{
 }
 body{
   text-align: center;
+  background-color: white;
 }
 a{
   margin: 10px;
+}
+.jumbotron{
+  background-image: url('http://www.guidingstar.ca/movie_reel.jpg');
+  background-size: contain;
+  color: khaki;
+  text-shadow: 2px 2px black;
+
 }
