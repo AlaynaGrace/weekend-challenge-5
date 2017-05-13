@@ -1,0 +1,15 @@
+<h1>Your Favorites</h1>
+
+<a href="/">Search</a>
+<a href="/favorites">Favorites</a>
+
+<div ng-controller="FaveController as fc" ng-init="fc.getFavoriteMovies()">
+  <div ng-repeat="fave in fc.favoriteMovies">
+    <div class="col-sm-4  col-xs-4">
+      <h4>{{fave.Title}}</h4>
+      <img ng-src="{{fave.Poster}}" alt="">
+      <button ng-click="fc.removeMovie(fave._id)">Remove Favorite</button>
+    </div>
+
+  </div>
+</div>
